@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+<p class: "showbox">
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+<p class: "showbox">
+  <strong>Body:</strong>
+  <%= @book.body %>
+</p>
+<a><%= link_to 'Edit', edit_book_path(@book), class: "Editlink" %></a>
+<span>|</span>
+<a><%= link_to 'Back', books_path, class: "Editlink" %></a>
