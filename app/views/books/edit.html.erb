@@ -7,8 +7,8 @@
         <%= message %>
       <% end %>
     <% end %>
-  </div>  
-  
+  </div>
+
 <%= form_with model:@book, url:book_path(@book), method: :patch, local:true do |f| %>
 
     <div class="field">
@@ -20,12 +20,12 @@
       <label>Body</label>
       <%= f.text_area :body %>
     </div>
-    
+
     <div class="actions">
-      <%= f.submit 'update Book' %>
+      <%= f.submit 'Update Book' %>
     </div>
-    
+
 <% end %>
-<a><%= link_to 'show', book_path(@book), class: "Editlink" %></a>
+<%= link_to 'show', book_path(@book), class: "Editlink" %>
 <span>|</span>
-<a><%= link_to 'Back', books_path, class: "Editlink" %></a>
+<%= link_to 'Back', books_path, class: "Editlink" %>
